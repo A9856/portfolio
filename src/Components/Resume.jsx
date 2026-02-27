@@ -1,4 +1,4 @@
-// import React from "react";
+
 export default function Resume() {
   return (
     <section id="resume" className="resume-section">
@@ -143,7 +143,7 @@ export default function Resume() {
     </section>
   );
 }
-// // Fully Responsive Resume.jsx - Perfect All Screen Sizes
+
 // import React from 'react';
 // export default function Resume() {
 //   return (
