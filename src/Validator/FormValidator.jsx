@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import passwordValidator from 'password-validator'
 var schema = new passwordValidator();
 
