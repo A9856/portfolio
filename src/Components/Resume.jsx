@@ -1,10 +1,9 @@
-// Fully Responsive Resume.jsx - Perfect All Screen Sizes
-import React from 'react';
+// import React from "react";
 export default function Resume() {
   return (
     <section id="resume" className="resume-section">
       <div className="container">
-        <div className="section-header" data-aos="fade-up">
+        <div className="section-header">
           <h2 className="section-title">Resume</h2>
           <div className="section-subtitle">
             Full Stack Developer with hands-on experience in modern web technologies and real-world projects.
@@ -12,43 +11,38 @@ export default function Resume() {
         </div>
 
         <div className="resume-grid">
-          <div className="resume-column left-column" data-aos="fade-right">
-            <div className="resume-card personal-info">
+
+          {/* LEFT COLUMN */}
+          <div className="resume-column">
+
+            {/* PERSONAL INFO */}
+            <div className="resume-card">
               <div className="profile-avatar">
-                <div className="avatar-placeholder">
-                  <span>AK</span>
-                </div>
+                <div className="avatar-placeholder">AK</div>
               </div>
-              <div className="personal-details">
-                <h3 className="name">Adil Khan</h3>
-                <p className="title">Full Stack Developer</p>
-                <div className="contact-info">
-                  <div className="contact-item">
-                    <span className="icon">📍</span>
-                    <span>Prayagraj, UP</span>
-                  </div>
-                  <div className="contact-item">
-                    <span className="icon">📞</span>
-                    <span>+91 9506640798</span>
-                  </div>
-                  <div className="contact-item">
-                    <span className="icon">✉️</span>
-                    <span>khana108992@gmail.com</span>
-                  </div>
-                </div>
+
+              <h3 className="name">Adil Khan</h3>
+              <p className="title">Full Stack Developer</p>
+
+              <div className="contact-info">
+                <div className="contact-item">📍 Prayagraj, UP</div>
+                <div className="contact-item">📞 +91 9506640798</div>
+                <div className="contact-item">✉️ khana108992@gmail.com</div>
               </div>
             </div>
 
-            <div className="resume-card education">
+            {/* EDUCATION */}
+            <div className="resume-card">
               <h4 className="card-title">Education</h4>
-              
+
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h5>B.Com (Professional)</h5>
                   <span className="date">2022 - 2025</span>
                   <p className="education-text">
-                    Rajendra Singh University<br/>Prayagraj, UP
+                    Rajendra Singh University <br />
+                    Prayagraj, UP
                   </p>
                 </div>
               </div>
@@ -56,70 +50,77 @@ export default function Resume() {
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <h5>Full Stack Web Dev</h5>
+                  <h5>Full Stack Web Development</h5>
                   <span className="date">2024 - 2025</span>
                   <p className="education-text">
-                    DUCAT IT Training School<br/>Noida Sector-16
+                    DUCAT IT Training School <br />
+                    Noida Sector-16
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="resume-column right-column" data-aos="fade-left">
-            <div className="resume-card experience">
+          {/* RIGHT COLUMN */}
+          <div className="resume-column">
+
+            {/* EXPERIENCE */}
+            <div className="resume-card">
               <h4 className="card-title">Experience</h4>
-              
+
               <div className="experience-item">
-                <div className="exp-header">
-                  <h5>Full Stack Developer</h5>
-                  <span className="company">Shiwansh Solution Pvt Ltd</span>
-                  <span className="date">2024 (6 Months)</span>
-                </div>
+                <h5>Full Stack Developer</h5>
+                <span className="company">Shiwansh Solution Pvt Ltd</span>
+                <span className="date">2024 (6 Months)</span>
+
                 <div className="project-highlight">
-                  <span className="project-link">🔗 <a href="https://hrdashfront.vercel.app" target="_blank" rel="noopener noreferrer">HR Dashboard</a></span>
+                  🔗
+                  <a
+                    href="https://hrdashfront.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    HR Dashboard
+                  </a>
                 </div>
+
                 <ul className="exp-bullets">
-                  <li>Developed comprehensive HR Dashboard with React.js, Tailwind CSS & Node.js backend</li>
-                  <li>Implemented employee management, attendance tracking, payroll processing features</li>
-                  <li>Integrated real-time notifications, role-based authentication & responsive UI design</li>
-                  <li>Optimized database queries reducing load time by 40% using MongoDB & REST APIs</li>
+                  <li>Developed HR Dashboard using React.js & Node.js</li>
+                  <li>Employee management & payroll system</li>
+                  <li>Role-based authentication & REST APIs</li>
+                  <li>Optimized MongoDB queries (40% faster load)</li>
                 </ul>
               </div>
 
               <div className="experience-item">
-                <div className="exp-header">
-                  <h5>Full Stack Developer</h5>
-                  <span className="company">S O Infotech (P) LTD</span>
-                  <span className="date">2023-2024 (6 Months)</span>
-                </div>
+                <h5>Full Stack Developer</h5>
+                <span className="company">S O Infotech (P) LTD</span>
+                <span className="date">2023 - 2024 (6 Months)</span>
+
                 <div className="project-highlight">
-                  <span className="project-link">🔗 <a href="https://genious-ivxi.onrender.com" target="_blank" rel="noopener noreferrer">Ecommerce Platform</a></span>
+                  🔗
+                  <a
+                    href="https://genious-ivxi.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ecommerce Platform
+                  </a>
                 </div>
+
                 <ul className="exp-bullets">
-                  <li>Built full-stack Ecommerce website using React.js, Express.js, MongoDB (MERN)</li>
-                  <li>Developed product catalog, cart management, payment integration & order tracking</li>
-                  <li>Implemented advanced search, filtering, user authentication & admin dashboard</li>
-                  <li>Deployed on Render with CI/CD pipeline ensuring 99.9% uptime & scalability</li>
+                  <li>Built MERN stack ecommerce platform</li>
+                  <li>Product, cart & order management</li>
+                  <li>Authentication & Admin dashboard</li>
+                  <li>Deployed on Render with CI/CD</li>
                 </ul>
               </div>
+            </div>
 
-              {/* <div className="experience-item">
-                <div className="exp-header">
-                  <h5>Web Development Intern</h5>
-                  <span className="company">Unified Mentor, Gurgaon</span>
-                  <span className="date">2023 (6 Months)</span>
-                </div>
-                <ul className="exp-bullets">
-                  <li>Developed responsive websites using React.js, Next.js, Redux, Express.js & MongoDB</li>
-                  <li>Integrated RESTful APIs and optimized frontend performance</li>
-                  <li>Delivered 4+ functional web modules monthly using Agile methodology</li>
-                </ul>
-              </div>*/}
-            </div> 
-
-            <div className="resume-card skills">
+            {/* SKILLS */}
+            <div className="resume-card">
               <h4 className="card-title">Skills</h4>
+
               <div className="skills-grid">
                 <span className="skill-tag primary">React.js</span>
                 <span className="skill-tag primary">Next.js</span>
@@ -135,12 +136,156 @@ export default function Resume() {
                 <span className="skill-tag">Vercel</span>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </section>
   );
 }
+// // Fully Responsive Resume.jsx - Perfect All Screen Sizes
+// import React from 'react';
+// export default function Resume() {
+//   return (
+//     <section id="resume" className="resume-section">
+//       <div className="container">
+//         <div className="section-header" data-aos="fade-up">
+//           <h2 className="section-title">Resume</h2>
+//           <div className="section-subtitle">
+//             Full Stack Developer with hands-on experience in modern web technologies and real-world projects.
+//           </div>
+//         </div>
+
+//         <div className="resume-grid">
+//           <div className="resume-column left-column" data-aos="fade-right">
+//             <div className="resume-card personal-info">
+//               <div className="profile-avatar">
+//                 <div className="avatar-placeholder">
+//                   <span>AK</span>
+//                 </div>
+//               </div>
+//               <div className="personal-details">
+//                 <h3 className="name">Adil Khan</h3>
+//                 <p className="title">Full Stack Developer</p>
+//                 <div className="contact-info">
+//                   <div className="contact-item">
+//                     <span className="icon">📍</span>
+//                     <span>Prayagraj, UP</span>
+//                   </div>
+//                   <div className="contact-item">
+//                     <span className="icon">📞</span>
+//                     <span>+91 9506640798</span>
+//                   </div>
+//                   <div className="contact-item">
+//                     <span className="icon">✉️</span>
+//                     <span>khana108992@gmail.com</span>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+
+//             <div className="resume-card education">
+//               <h4 className="card-title">Education</h4>
+              
+//               <div className="timeline-item">
+//                 <div className="timeline-dot"></div>
+//                 <div className="timeline-content">
+//                   <h5>B.Com (Professional)</h5>
+//                   <span className="date">2022 - 2025</span>
+//                   <p className="education-text">
+//                     Rajendra Singh University<br/>Prayagraj, UP
+//                   </p>
+//                 </div>
+//               </div>
+
+//               <div className="timeline-item">
+//                 <div className="timeline-dot"></div>
+//                 <div className="timeline-content">
+//                   <h5>Full Stack Web Dev</h5>
+//                   <span className="date">2024 - 2025</span>
+//                   <p className="education-text">
+//                     DUCAT IT Training School<br/>Noida Sector-16
+//                   </p>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="resume-column right-column" data-aos="fade-left">
+//             <div className="resume-card experience">
+//               <h4 className="card-title">Experience</h4>
+              
+//               <div className="experience-item">
+//                 <div className="exp-header">
+//                   <h5>Full Stack Developer</h5>
+//                   <span className="company">Shiwansh Solution Pvt Ltd</span>
+//                   <span className="date">2024 (6 Months)</span>
+//                 </div>
+//                 <div className="project-highlight">
+//                   <span className="project-link">🔗 <a href="https://hrdashfront.vercel.app" target="_blank" rel="noopener noreferrer">HR Dashboard</a></span>
+//                 </div>
+//                 <ul className="exp-bullets">
+//                   <li>Developed comprehensive HR Dashboard with React.js, Tailwind CSS & Node.js backend</li>
+//                   <li>Implemented employee management, attendance tracking, payroll processing features</li>
+//                   <li>Integrated real-time notifications, role-based authentication & responsive UI design</li>
+//                   <li>Optimized database queries reducing load time by 40% using MongoDB & REST APIs</li>
+//                 </ul>
+//               </div>
+
+//               <div className="experience-item">
+//                 <div className="exp-header">
+//                   <h5>Full Stack Developer</h5>
+//                   <span className="company">S O Infotech (P) LTD</span>
+//                   <span className="date">2023-2024 (6 Months)</span>
+//                 </div>
+//                 <div className="project-highlight">
+//                   <span className="project-link">🔗 <a href="https://genious-ivxi.onrender.com" target="_blank" rel="noopener noreferrer">Ecommerce Platform</a></span>
+//                 </div>
+//                 <ul className="exp-bullets">
+//                   <li>Built full-stack Ecommerce website using React.js, Express.js, MongoDB (MERN)</li>
+//                   <li>Developed product catalog, cart management, payment integration & order tracking</li>
+//                   <li>Implemented advanced search, filtering, user authentication & admin dashboard</li>
+//                   <li>Deployed on Render with CI/CD pipeline ensuring 99.9% uptime & scalability</li>
+//                 </ul>
+//               </div>
+
+//               {/* <div className="experience-item">
+//                 <div className="exp-header">
+//                   <h5>Web Development Intern</h5>
+//                   <span className="company">Unified Mentor, Gurgaon</span>
+//                   <span className="date">2023 (6 Months)</span>
+//                 </div>
+//                 <ul className="exp-bullets">
+//                   <li>Developed responsive websites using React.js, Next.js, Redux, Express.js & MongoDB</li>
+//                   <li>Integrated RESTful APIs and optimized frontend performance</li>
+//                   <li>Delivered 4+ functional web modules monthly using Agile methodology</li>
+//                 </ul>
+//               </div>*/}
+//             </div> 
+
+//             <div className="resume-card skills">
+//               <h4 className="card-title">Skills</h4>
+//               <div className="skills-grid">
+//                 <span className="skill-tag primary">React.js</span>
+//                 <span className="skill-tag primary">Next.js</span>
+//                 <span className="skill-tag primary">Redux</span>
+//                 <span className="skill-tag primary">Node.js</span>
+//                 <span className="skill-tag primary">Express.js</span>
+//                 <span className="skill-tag primary">MongoDB</span>
+//                 <span className="skill-tag">Tailwind CSS</span>
+//                 <span className="skill-tag">JavaScript</span>
+//                 <span className="skill-tag secondary">MERN Stack</span>
+//                 <span className="skill-tag secondary">REST APIs</span>
+//                 <span className="skill-tag">Git</span>
+//                 <span className="skill-tag">Vercel</span>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 // import React from 'react'
 
