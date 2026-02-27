@@ -1,5 +1,5 @@
 // Enhanced HomePage.jsx - Impressive Colors & Interactive Animations
-import React, { useEffect, useRef } from 'react';
+import  { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
