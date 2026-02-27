@@ -27,11 +27,14 @@ export default function Footer() {
     else
     setMessage("Please Enter a Valid Email Address")
   }
-  useEffect(()=>{
-    (()=>{
-      dispatch(getNewsletter())
-    })()
-  },[NewsletterStateData.length])
+  // useEffect(()=>{
+  //   (()=>{
+  //     dispatch(getNewsletter())
+  //   })()
+  // },[NewsletterStateData.length])
+  useEffect(() => {
+  dispatch(getNewsletter());
+}, [dispatch]);
   return (
     <>
      <footer id="footer" className="footer text-light">
