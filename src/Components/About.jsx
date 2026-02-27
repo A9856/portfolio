@@ -1,4 +1,4 @@
-import adil1 from "../assests/img/adi1.jpeg"
+import adil1 from "../assests/img/code.jpeg"
 export default function About() {
 
     return (
