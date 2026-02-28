@@ -2552,3 +2552,684 @@ html, body {
     right: 20px;
   }
 }
+
+/* education update */
+/* =============================================
+   Adil Education Dark Timeline - Updated 2025
+============================================= */
+
+#adil-education-dark-hero.adil-education-dark-section {
+  padding: 90px 20px 110px;
+  background: linear-gradient(145deg, #0f172a 0%, #0a0e1f 100%);
+  color: #e2e8f0;
+}
+
+.adil-container-max {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.adil-section-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 70px;
+  color: #e2e8f0;
+  position: relative;
+}
+
+.adil-section-heading::after {
+  content: '';
+  width: 100px;
+  height: 5px;
+  background: #4ade80;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+/* Timeline line */
+.adil-timeline-wrapper {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.adil-timeline-vertical-line {
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(to bottom, #334155, #1e293b);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Item container */
+.adil-timeline-single-item {
+  position: relative;
+  margin: 70px 0;
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Left side items come from left */
+.adil-from-left {
+  transform: translateX(-120px);
+}
+
+/* Right side items come from right */
+.adil-from-right {
+  transform: translateX(120px);
+}
+
+.adil-timeline-single-item.adil-visible {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+/* Year badge */
+.adil-timeline-year-badge {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -95px;
+  background: #2d5a2f;
+  color: #d1fae5;
+  padding: 9px 16px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 5px 14px rgba(74, 222, 128, 0.2);
+  border: 2px solid #4ade80;
+  z-index: 4;
+  white-space: nowrap;
+}
+
+.adil-timeline-single-item:nth-child(even) .adil-timeline-year-badge {
+  left: auto;
+  right: -95px;
+}
+
+/* Card */
+.adil-timeline-card-content {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+  margin-left: 70px;
+  margin-right: 70px;
+  border: 1px solid #334155;
+  transition: all 0.35s ease;
+}
+
+.adil-timeline-single-item:hover .adil-timeline-card-content {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(74, 222, 128, 0.16);
+  border-color: #4ade80;
+}
+
+/* Image container - smaller & professional size */
+.adil-education-img-container {
+  width: 100%;
+  height: 200px;                /* ← main size control – change if needed */
+  max-width: 360px;             /* prevents too wide on big screens */
+  margin: 0 auto 20px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+/* Image with colorful borders */
+.adil-education-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+  border-top: 4px solid #ff6b6b;      /* red-ish top */
+  border-right: 4px solid #4ecdc4;    /* cyan right */
+  border-bottom: 4px solid #ffe66d;   /* yellow bottom */
+  border-left: 4px solid #95d5b2;     /* green left */
+  box-sizing: border-box;
+}
+
+.adil-timeline-card-content:hover .adil-education-img {
+  transform: scale(1.08);
+}
+
+/* Text */
+.adil-card-institute-name {
+  margin: 0 0 10px;
+  color: #e2e8f0;
+  font-size: 1.45rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.adil-card-detail {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Timeline dot */
+.adil-timeline-single-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #0f172a;
+  border: 4px solid #4ade80;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  box-shadow: 0 0 0 7px rgba(74, 222, 128, 0.18);
+  transition: all 0.6s ease;
+}
+
+.adil-timeline-single-item.adil-visible::before {
+  transform: translate(-50%, -50%) scale(1.4);
+}
+
+/* ─────────────── Responsive ─────────────── */
+@media (max-width: 768px) {
+  .adil-timeline-vertical-line {
+    left: 32px;
+  }
+
+  .adil-timeline-year-badge {
+    left: 75px !important;
+    right: auto !important;
+    top: -8px;
+    transform: none;
+  }
+
+  .adil-timeline-card-content {
+    margin-left: 85px;
+    margin-right: 20px;
+  }
+
+  .adil-timeline-single-item::before {
+    left: 32px;
+  }
+
+  .adil-education-img-container {
+    height: 180px;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adil-section-heading {
+    font-size: 2.3rem;
+  }
+
+  .adil-education-img-container {
+    height: 160px;
+  }
+
+  .adil-timeline-card-content {
+    padding: 20px;
+  }
+}
+
+/* contact update */
+.adil-contact-dark-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.adil-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.adil-section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #d1fae5;
+  position: relative;
+}
+
+.adil-section-title::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background: #4ade80;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.adil-contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.adil-info-column,
+.adil-form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.adil-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.adil-info-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  border: 1px solid #334155;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.adil-info-card.visible,
+.adil-slide-in-left {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideInLeft 0.7s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.adil-info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(74, 222, 128, 0.18);
+  border-color: #4ade80;
+}
+
+.adil-info-icon {
+  font-size: 2.2rem;
+  color: #4ade80;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.adil-info-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+  color: #e2e8f0;
+}
+
+.adil-info-card p,
+.adil-info-card a {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.adil-info-card a:hover {
+  color: #4ade80;
+}
+
+.adil-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.adil-social-link {
+  font-size: 1.8rem;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.adil-social-link:hover {
+  color: #4ade80;
+  transform: scale(1.2);
+}
+
+/* ────────────── Form ────────────── */
+.adil-form-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 35px;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards 0.4s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.adil-form-heading {
+  text-align: center;
+  font-size: 1.35rem;
+  color: #d1fae5;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.adil-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.adil-form-group.full {
+  grid-column: 1 / -1;
+}
+
+.adil-form-group.half {
+  grid-column: span 1;
+}
+
+.adil-input,
+.adil-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.adil-input:focus,
+.adil-textarea:focus {
+  border-color: #4ade80;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.25);
+}
+
+.adil-textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.adil-error {
+  border-color: #ef4444 !important;
+}
+
+.adil-error-msg {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  display: block;
+}
+
+.adil-submit-btn {
+  background: #4ade80;
+  color: #0f172a;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  width: 100%;
+  max-width: 280px;
+  margin: 15px auto 0;
+  display: block;
+}
+
+.adil-submit-btn:hover {
+  background: #2d5a2f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(74, 222, 128, 0.4);
+}
+
+/* ────────────── Responsive ────────────── */
+
+@media (max-width: 992px) {
+  .adil-contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .adil-info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .adil-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .adil-section-title {
+    font-size: 2.4rem;
+  }
+
+  .adil-form-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .adil-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .adil-form-group.half {
+    grid-column: 1 / -1;
+  }
+
+  .adil-submit-btn {
+    width: 100%;
+  }
+}
+
+/* certificate  New Page */
+.adil-certificates {
+  padding: 80px 20px 100px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #e2e8f0;
+}
+
+.adil-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.adil-section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #d1fae5;
+  position: relative;
+}
+
+.adil-title-underline {
+  display: block;
+  width: 120px;
+  height: 5px;
+  background: #10b981; /* green accent jaise screenshot mein */
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* 4 per row grid */
+.adil-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.adil-cert-item {
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.cert-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.adil-cert-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e293b;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid #334155;
+  transition: all 0.4s ease;
+  aspect-ratio: 4 / 5;          /* certificate jaisa tall look */
+}
+
+.adil-cert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(16, 185, 129, 0.25);
+  border-color: #10b981;
+}
+
+.adil-cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.adil-cert-card:hover .adil-cert-image {
+  transform: scale(1.08);
+}
+
+.adil-cert-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(15,23,42,0.85));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.adil-cert-card:hover .adil-cert-overlay {
+  opacity: 1;
+}
+
+.adil-cert-number {
+  color: white;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.4);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+}
+
+/* Modal - Full image open */
+.adil-fullscreen-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.94);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adil-modal-inner {
+  position: relative;
+  width: 96vw;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.adil-fullscreen-image {
+  max-width: 96vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border: 3px solid #10b981;
+  border-radius: 10px;
+  box-shadow: 0 0 60px rgba(16,185,129,0.3);
+}
+
+.adil-close-btn-right {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  font-size: 2.8rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  transition: all 0.3s;
+}
+
+.adil-close-btn-right:hover {
+  transform: rotate(90deg) scale(1.1);
+  background: #dc2626;
+}
+
+.adil-modal-footer {
+  color: #d1fae5;
+  margin-top: 15px;
+  font-size: 1.15rem;
+  background: rgba(16,185,129,0.15);
+  padding: 8px 24px;
+  border-radius: 30px;
+  border: 1px solid rgba(16,185,129,0.3);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .adil-cert-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .adil-cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .adil-section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .adil-cert-grid {
+    grid-template-columns: 1fr;
+  }
+}

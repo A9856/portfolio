@@ -1,11 +1,11 @@
 import React from "react";
-import shoesImg from "../assests/img/shoes.jpg"
+import shoesImg from "../assests/img/Shoes2.jpg"
 export default function Project() {
     const projects = [
         {
             title: "Flow Forge App",
             desc: "A modern interactive productivity web app with smooth UI and optimized performance.",
-            tech: ["React", "Tailwind CSS", "JavaScript"],
+            tech: ["ReactJs", "Tailwind CSS","ShadcnUI"],
             live: "https://flow-forge-pink.vercel.app",
             image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c"
         },
@@ -19,21 +19,21 @@ export default function Project() {
         {
             title: "Genious App",
             desc: "Full-stack deployed web application with authentication and API integration.",
-            tech: ["React", "Express", "MongoDB"],
+            tech: ["ReactJs", "ExpressJs", "NodeJs", "MongoDB","RestAPI"],
             live: "https://genious-ivxi.render.com",
             image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
         },
         {
             title: "Tech Mart E-Commerce",
             desc: "Responsive e-commerce platform with cart system and clean UI design.",
-            tech: ["React", "Redux", "Node.js"],
+            tech: ["ReactJs", "Redux", "Node.js","Tailwind CSS","ShadcnUI","JSON server"],
             live: "https://tech-mart-rxr7.vercel.app",
             image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
         },
         {
             title: "Shoes Store",
             desc: "Modern footwear store website with responsive product layout.",
-            tech: ["React", "JavaScript", "CSS"],
+            tech: ["ReactJs","ShadcnUI","Tailwind CSS","Bootstrap5","JSON Server"],
             live: "https://shoes-ten.vercel.app",
             //   image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
             image: shoesImg
@@ -41,7 +41,7 @@ export default function Project() {
         {
             title: "APCS Web App",
             desc: "Full-stack application with modern UI components and optimized structure.",
-            tech: ["React", "Node.js", "MongoDB"],
+            tech: ["ReactJs", "Node.js", "MongoDB","ShadcnUI","Tailwind CSS"],
             live: "https://apcs-9krb.vercel.app/",
             image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
         }

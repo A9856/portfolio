@@ -11,6 +11,7 @@ import ContactUsPage from './Pages/ContactUsPage'
 import SkillPage from './Pages/SkillPage'
 import ProjectPage from './Pages/ProjectPage'
 import EducationPage from './Pages/EducationPage'
+import CertificatePage from './Pages/CertificatePage'
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
     <Route path='/skills'element={<SkillPage/>}/>
     {/* <Route path='/portofolio'element={<PortfolioPage/>}/>
     <Route path='/services'element={<ServicePage/>}/> */}
+    <Route path='/certificates'element={<CertificatePage/>}/>
     <Route path='/contact'element={<ContactUsPage/>}/>
     <Route path='/project'element={<ProjectPage/>}/>
     <Route path='/education'element={<EducationPage/>}/>

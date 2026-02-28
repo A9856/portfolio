@@ -12,6 +12,7 @@ import Education from '../Components/Education';
 import { Link } from 'react-router-dom';
 import adil1 from "../assests/img/adil1.jpeg";
 import resume from "../assests/img/resume1.jpeg";
+import Certificates from '../Components/Certificate';
 
 export default function HomePage() {
   const typedRef = useRef(null);
@@ -140,6 +141,7 @@ export default function HomePage() {
       <Skills />
       <Resume />
       <Project />
+      <Certificates/>
       <Education />
       <ContactUsPage />
     </>
