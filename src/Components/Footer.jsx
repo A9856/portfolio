@@ -100,8 +100,7 @@ export default function Footer() {
       <Link to={process.env.REACT_APP_INSTAGRAM} target='_blank' rel='noreferrer'><i className="text-light bi bi-instagram"></i></Link>
       <Link to={process.env.REACT_APP_LINKEDIN} target='_blank' rel='noreferrer'><i className="text-light bi bi-linkedin"></i></Link>
       <Link to={process.env.REACT_APP_TWITTER} target='_blank' rel='noreferrer'><i className="text-light bi bi-twitter-x"></i></Link>
-
-
+      <Link to={`https://wa.me/${process.env.REACT_APP_WHATSAPP}`} target="_blank" rel="noreferrer"><i className="text-light bi bi-whatsapp"></i></Link>
       </div>
     </div>
 

@@ -90,7 +90,7 @@ export default function ContactUsPage() {
               <a href="https://github.com/" target="_blank" rel="noreferrer" className="adil-social-link">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/adil-khan" target="_blank" rel="noreferrer" className="adil-social-link">
+              <a href="https://www.linkedin.com/in/adil-khan-01b96627b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="adil-social-link">
                 <i className="fab fa-linkedin"></i>
               </a>
               <a href="https://x.com/AdilKha38643869" target="_blank" rel="noreferrer" className="adil-social-link">
